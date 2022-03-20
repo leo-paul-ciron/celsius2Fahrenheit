@@ -24,15 +24,18 @@ function conversion(valeur) {
     let fahrenheit = null;
 
     if (celsius != null) {
-        let fahrenheit = (valeur * (9/5) +32 );
-        console.log(fahrenheit)
+        fahrenheit = (valeur * (9/5) +32 );
+       
     }
     
+    document.getElementById("value_affiche").innerHTML = fahrenheit;
     return fahrenheit
 }
 
 function main() {
     let valeur = document.getElementById("InputConv").value;
     
-    conversion(valeur);
+    let fahrenheit = conversion(valeur);
+
+   
 }
